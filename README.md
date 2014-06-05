@@ -14,23 +14,23 @@ SERVER INFORMATION
 	
 	Your own function classes needs to have a return value and never print nothing or the result will not work.
 	
-USAGE
-	phpProtectorServer needs to receive all variables in json var with the name "data"
-	- $myClass = array( 0 => array(	"class" => "nameOfMyClass",
-						"params" => array("param1","param2","param3"),
-						"methods" => array("myMethod1" => array("param1","param2"),
-											"myMethod2" => array("param1"))),
-						1 => array(	"class" => "nameOfMyClass2",
-									"params" => array("param1","param2"),
-									"methods" => array("myMethod1" => array("param1"))));
-									
-		This example will return 3 results:
-			$nameOfMyClass = new nameOfMyClass("param1","param2","param3");
-			$nameOfMyClass2 = new nameOfMyClass("param1","param2");
-			
-			- $result = array(	0 => $nameOfMyClass->myMethod1("param1","param2"),
-								1 => $nameOfMyClass->myMethod2("param1"),
-								2 => $nameOfMyClass2->myMethod1("param1"));
+	USAGE
+		phpProtectorServer needs to receive all variables in json var with the name "data"
+		- $myClass = array( 0 => array(	"class" => "nameOfMyClass",
+							"params" => array("param1","param2","param3"),
+							"methods" => array("myMethod1" => array("param1","param2"),
+												"myMethod2" => array("param1"))),
+							1 => array(	"class" => "nameOfMyClass2",
+										"params" => array("param1","param2"),
+										"methods" => array("myMethod1" => array("param1"))));
+										
+			This example will return 3 results:
+				$nameOfMyClass = new nameOfMyClass("param1","param2","param3");
+				$nameOfMyClass2 = new nameOfMyClass("param1","param2");
+				
+				- $result = array(	0 => $nameOfMyClass->myMethod1("param1","param2"),
+									1 => $nameOfMyClass->myMethod2("param1"),
+									2 => $nameOfMyClass2->myMethod1("param1"));
 
 CLIENT INFORMATION
 
