@@ -1,4 +1,5 @@
 SERVER INFORMATION
+
 	Visit www.andoitz.com for more information and updates
 
 	PHPPROTECTOR is used for protect your PHP classes code and use it in other place. For example:
@@ -13,7 +14,7 @@ SERVER INFORMATION
 	
 	Your own function classes needs to have a return value and never print nothing or the result will not work.
 	
-USAGE:
+USAGE
 	phpProtectorServer needs to receive all variables in json var with the name "data"
 	- $myClass = array( 0 => array(	"class" => "nameOfMyClass",
 						"params" => array("param1","param2","param3"),
@@ -34,7 +35,7 @@ USAGE:
 CLIENT INFORMATION
 
 	Create your own phpProtectorClient for call the phpProtector classes
-		USAGE:
+		USAGE
 			phpProtectorServer needs to receive all variables in json var with the name "data"
 			- $myClass = array( 0 => array(	"class" => "nameOfMyClass",
 								"params" => array("param1","param2","param3"),
